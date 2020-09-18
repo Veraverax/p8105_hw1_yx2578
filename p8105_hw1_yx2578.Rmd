@@ -5,6 +5,7 @@ output: github_document
 ---
 
 This is my solution to HW1.
+
 ```{r}
 library(tidyverse)
 library(palmerpenguins)
@@ -47,7 +48,6 @@ as.numeric(pull(prob1_df, samp_gt_0)) * pull(prob1_df, samp)
 ```
 
 
-
 ## Problem 2
 
 ```{r}
@@ -63,10 +63,10 @@ data("penguins", package = "palmerpenguins")
 
 #### Scatterplot showing the distribution of bill length and flipper length by species
 ```{r}
-ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) + geom_point()
+ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species))+ geom_point()
 ```
 
 ```{r}
-ggsave("hw1_q2.png")
+ggsave("p8105_hw1_q2.png")
 ```
 
