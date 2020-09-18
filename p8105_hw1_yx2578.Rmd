@@ -55,7 +55,7 @@ data("penguins", package = "palmerpenguins")
 ```
 
 #### Description of the penguins dataset
-* The penguins dataset contains the following variables: `r ls(penguins)` .
+* The penguins dataset contains the following variables: `r ls(penguins)`.
   * The species variable contains `r unique(pull(penguins, species))`
   * The island variable contains `r unique(pull(penguins, island))`
 * The penguins dataset has `r nrow(penguins)` rows and `r ncol(penguins)` columns.
